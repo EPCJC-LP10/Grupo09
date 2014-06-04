@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# -*- coding: iso8859-1 -*-
 """
 Created on Fri May 30 11:26:19 2014
 
@@ -9,12 +9,13 @@ def principal():
     print
     print " **** MENU ****** "
     print
-    print "   1. Gest√£o de Clientes"
+    print "   1. Gest„o de Clientes"
+    print "   2. Gest„o de Veiculos"
     print 
     print "   0. Sair"
     print 
 
-    op = raw_input("Op√ß√£o: ")
+    op = raw_input("OpÁ„o: ")
     return op
 
 
@@ -30,7 +31,7 @@ def clientes():
     print 
     print "0. Menu Anterior"
 
-    op = raw_input("Op√ß√£o: ")
+    op = raw_input("OpÁ„o: ")
     return op
     
 def veiculos():
@@ -45,22 +46,22 @@ def veiculos():
     print 
     print "0. Menu Anterior"
 
-    op = raw_input("Op√ß√£o: ")
+    op = raw_input("OpÁ„o: ")
     return op
     
 def servicos():
     print
-    print " *** Menu Servi√ßo **** "
+    print " *** Menu ServiÁo **** "
     print
-    print "1. Inserir novo Servi√ßo"
-    print "2. Listar todos Servi√ßos"
-    print "3. Pesquisar Servi√ßo"
-    print "4. Alterar dados de um Servi√ßo"
-    print "5. Eliminar Servi√ßo"
+    print "1. Inserir novo ServiÁo"
+    print "2. Listar todos ServiÁos"
+    print "3. Pesquisar ServiÁo"
+    print "4. Alterar dados de um ServiÁo"
+    print "5. Eliminar ServiÁo"
     print 
     print "0. Menu Anterior"
 
-    op = raw_input("Op√ß√£o: ")
+    op = raw_input("OpÁ„o: ")
     return op
     
     
@@ -68,4 +69,4 @@ def servicos():
 
 
 if __name__ == "__main__":
-    print "Este programa n√£o deve ser executado diretamente"
+    print "Este programa n„o deve ser executado diretamente"

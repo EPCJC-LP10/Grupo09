@@ -45,7 +45,7 @@ while not terminar:
     if op == '1':
         clientes.gerir()
     elif op == '2':
-        pass    #por fazer
+        veiculos.gerir()
     elif op == '0':
         terminar = True
 

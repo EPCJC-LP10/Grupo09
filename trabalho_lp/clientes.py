@@ -56,7 +56,7 @@ def pesquisar_cliente():
 
 
 def listar_cliente():
-    for i in range (len(listaCLientes)):
+    for i in range (len(listaClientes)):
         print "Código: ", listaClientes[i].id
         print "Nome: ", listaClientes[i].nome
         
