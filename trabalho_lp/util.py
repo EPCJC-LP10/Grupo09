@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# -*- coding: iso8859-1 -*-
 """
 Created on Fri May 30 11:31:20 2014
 
@@ -14,7 +14,7 @@ def ler_ficheiro(ficheiro):
 		lista = pickle.load(f)		
 		f.close
 	except:
-		print "Ficheiro %s n√£o existe!" % (ficheiro)
+		print "Ficheiro %s n„o existe!" % (ficheiro)
 
 	return lista
 

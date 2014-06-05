@@ -26,7 +26,7 @@ def encontrar_posicao(codigo):
 
 
 def inserir_cliente():
-    cod = input("Qual o codigo? ")
+    cod = raw_input("Qual o codigo? ")
 
     pos = encontrar_posicao(cod)
 
@@ -42,7 +42,7 @@ def inserir_cliente():
 
 
 def pesquisar_cliente():
-    cod = input("Qual o codigo do cliente a pesquisar? ")
+    cod = raw_input("Qual o codigo do cliente a pesquisar? ")
 
     pos = encontrar_posicao(cod)
 
@@ -63,7 +63,7 @@ def listar_cliente():
   
 
 def eliminar_cliente():
-    cod = input ("Código do Cliente a eliminar --> ")
+    cod = raw_input ("Código do Cliente a eliminar --> ")
     pos = encontrar_posicao(cod)
 
     if pos == -1:
@@ -76,7 +76,7 @@ def eliminar_cliente():
 
     
 def alterar_cliente():
-    cod = input ("Código do cliente a alterar --> ")
+    cod = raw_input ("Código do cliente a alterar --> ")
     pos = encontrar_posicao(cod)
 
     if pos == -1:

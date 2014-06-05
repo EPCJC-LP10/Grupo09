@@ -28,7 +28,7 @@ def encontrar_posicao(codigo):
 
 
 def inserir_veiculo():
-    cod = input("Qual o codigo? ")
+    cod = raw_input("Qual o codigo? ")
 
     pos = encontrar_posicao(cod)
 
@@ -44,7 +44,7 @@ def inserir_veiculo():
 
 
 def pesquisar_veiculo():
-    cod = input("Qual o codigo do veiculo a pesquisar? ")
+    cod = raw_input("Qual o codigo do veiculo a pesquisar? ")
 
     pos = encontrar_posicao(cod)
 
@@ -66,7 +66,7 @@ def listar_veiculo():
   
 
 def eliminar_veiculo():
-    cod = input ("Código do veiculo a eliminar --> ")
+    cod = raw_input ("Código do veiculo a eliminar --> ")
     pos = encontrar_posicao(cod)
 
     if pos == -1:
@@ -79,7 +79,7 @@ def eliminar_veiculo():
 
     
 def alterar_veiculo():
-    cod = input ("Código do veiculo a alterar --> ")
+    cod = raw_input ("Código do veiculo a alterar --> ")
     pos = encontrar_posicao(cod)
 
     if pos == -1:
@@ -101,7 +101,7 @@ def gerir():
     terminar = False
 
     while not terminar:
-        op = menu.veiculo()
+        op = menu.veiculos()
 
         if op == '1':
             inserir_veiculo()

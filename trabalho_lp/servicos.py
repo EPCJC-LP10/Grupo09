@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# -*- coding: iso8859-1 -*-
 """
 Created on Mon Jun 02 09:49:41 2014
 
@@ -10,7 +10,7 @@ from collections import namedtuple
 import menu
 
 
-servicoReg = namedtuple("servicoReg", "id, servi√ßo, preco")
+servicoReg = namedtuple("servicoReg", "id, servico, preco")
 listaServicos = []
 
 
@@ -26,67 +26,67 @@ def encontrar_posicao(codigo):
 
 
 def inserir_servico():
-    cod = input("Qual o codigo? ")
+    cod = raw_input("Qual o codigo? ")
 
     pos = encontrar_posicao(cod)
 
     if pos >= 0:
-        print "C√≥digo j√° existe"
+        print "CÛdigo j· existe"
         return
 
     #ler dados
     servico = raw_input("Qual o servico? ")
-    preco = raw_input("Qual o pre√ßo?")
+    preco = raw_input("Qual o preÁo?")
     registo = servicoReg(cod, servico, preco)
     listaServicos.append(registo)
 
 
 def pesquisar_servico():
-    cod = input("Qual o codigo do servi√ßo a pesquisar? ")
+    cod = raw_input("Qual o codigo do serviÁo a pesquisar? ")
 
     pos = encontrar_posicao(cod)
 
     if pos == -1:
-        print "N√£o existe servi√ßo com esse c√≥digo"
+        print "N„o existe serviÁo com esse cÛdigo"
         return
 
-    print "C√≥digo: ", listaServicos[pos].id
-    print "Servi√ßo: ", listaServicos[pos].servico
-    print "Pre√ßo: ", listaServicos[pos].preco
+    print "CÛdigo: ", listaServicos[pos].id
+    print "ServiÁo: ", listaServicos[pos].servico
+    print "PreÁo: ", listaServicos[pos].preco
 
 
 def listar_servico():
     for i in range (len(listaServicos)):
-        print "C√≥digo: ", listaServicos[i].id
-        print "Servi√ßo: ", listaServicos[i].servico
-        print "Pre√ßo: ", listaServicos[i].preco
+        print "CÛdigo: ", listaServicos[i].id
+        print "ServiÁo: ", listaServicos[i].servico
+        print "PreÁo: ", listaServicos[i].preco
   
 
 def eliminar_servico():
-    cod = input ("C√≥digo do Servi√ßo a eliminar --> ")
+    cod = raw_input ("CÛdigo do ServiÁo a eliminar --> ")
     pos = encontrar_posicao(cod)
 
     if pos == -1:
-        print "N√£o existe Servi√ßo com esse c√≥digo"
+        print "N„o existe ServiÁo com esse cÛdigo"
         return
 
-    # TODO: Confirmar elimina√ß√£o
+    # TODO: Confirmar eliminaÁ„o
     listaServicos.pop(pos)
 
 
     
 def alterar_servico():
-    cod = input ("C√≥digo do Servi√ßo a alterar --> ")
+    cod = raw_input ("CÛdigo do ServiÁo a alterar --> ")
     pos = encontrar_posicao(cod)
 
     if pos == -1:
-        print "N√£o existe Servi√ßo com esse c√≥digo"
+        print "N„o existe ServiÁo com esse cÛdigo"
         return
 
-    # s√≥ altera o nome
-    novoservico = raw_input("Qual o Servi√ßo? ")
+    # sÛ altera o nome
+    novoservico = raw_input("Qual o ServiÁo? ")
     listaServicos[pos] = listaServicos[pos]._replace(servico=novoservico)
-    novopreco = raw_input("Qual o pre√ßo? ")
+    novopreco = raw_input("Qual o preÁo? ")
     listaServicos[pos] = listaServicos[pos]._replace(preco=novopreco)
     
 
@@ -118,4 +118,4 @@ def gerir():
 
 
 if __name__ == "__main__":
-    print "Este programa n√£o deve ser executado diretamente"
+    print "Este programa n„o deve ser executado diretamente"
