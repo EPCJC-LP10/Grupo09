@@ -8,6 +8,7 @@ Created on Mon Jun 02 09:49:41 2014
 from collections import namedtuple
 
 import menu
+import clientes
 
 
 servicoReg = namedtuple("servicoReg", "id, servico, preco")
@@ -25,8 +26,15 @@ def encontrar_posicao(codigo):
     return pos
 
 
-def inserir_servico():
-    cod = raw_input("Qual o codigo? ")
+def registar_servico():
+    cod = raw_input("Qual o codigo cliente ? ")
+    for i in range:
+        if cod == cod.clientes:
+            print "Existe este cliente"
+        else:
+            print "Este cliente não existe!!"
+        
+    
 
     pos = encontrar_posicao(cod)
 
@@ -89,7 +97,6 @@ def alterar_servico():
     novopreco = raw_input("Qual o preço? ")
     listaServicos[pos] = listaServicos[pos]._replace(preco=novopreco)
     
-
 
 
         

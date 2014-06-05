@@ -11,6 +11,8 @@ def principal():
     print
     print "   1. Gestão de Clientes"
     print "   2. Gestão de Veiculos"
+    print
+    print "   3. Registar Serviço"
     print 
     print "   0. Sair"
     print 

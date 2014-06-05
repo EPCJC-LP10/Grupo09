@@ -33,7 +33,6 @@ def escrever_ficheiros():
     util.escrever_ficheiro(fxServicos, servicos.listaServicos)
  
 
-
 # Bloco Principal
 
 ler_ficheiros()
@@ -46,6 +45,8 @@ while not terminar:
         clientes.gerir()
     elif op == '2':
         veiculos.gerir()
+    elif op == '3':
+        servicos.registar_servico()
     elif op == '0':
         terminar = True
 
