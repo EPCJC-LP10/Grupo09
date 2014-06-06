@@ -8,8 +8,6 @@ Created on Mon Jun 02 09:49:41 2014
 from collections import namedtuple
 
 import menu
-import clientes
-
 
 servicoReg = namedtuple("servicoReg", "id, servico, preco")
 listaServicos = []
@@ -33,7 +31,7 @@ def registar_servico():
     
 
     pos = encontrar_posicao(cod)
-    print pos
+    
 
     if pos == -1:
         print "Não existe esse cliente"
@@ -103,7 +101,7 @@ def gerir():
     terminar = False
 
     while not terminar:
-        op = menu.servicos()
+        op = menu.gestao_servicos()
 
         if op == '1':
             registar_servico()

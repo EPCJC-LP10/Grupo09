@@ -11,8 +11,8 @@ def principal():
     print
     print "   1. Gestão de Clientes"
     print "   2. Gestão de Veiculos"
-    print
-    print "   3. Registar Serviço"
+    print "   3. Gestão de Serviços"
+    print "   4. Registar Serviço"
     print 
     print "   0. Sair"
     print 
@@ -51,7 +51,7 @@ def veiculos():
     op = raw_input("Opção: ")
     return op
     
-def servicos():
+def gestao_servicos():
     print
     print " *** Menu Serviço **** "
     print

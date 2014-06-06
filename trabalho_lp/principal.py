@@ -9,28 +9,30 @@ Created on Fri May 30 11:27:00 2014
 import menu
 import clientes
 import veiculos
-import servicos
+import gestao_servicos
 import util
+import registar_servicos
 
 
 # nome dos ficheiros
 fxClientes = "fxclientes.dat"
 fxVeiculos = "fxveiculos.dat"
-fxServicos = "fxservicos.dat"
+fxgestao_servicos = "fxgestao_servicos.dat"
 
 def ler_ficheiros():
 	# adicionar todos ficheiros a ler
     clientes.listaClientes = util.ler_ficheiro(fxClientes)
     veiculos.listaVeiculos = util.ler_ficheiro(fxVeiculos)
-    servicos.listaServicos = util.ler_ficheiro(fxServicos)
-
+    gestao_servicos.listaServicos = util.ler_ficheiro(fxgestao_servicos)
+    registar_servicos.listaServicos = util.ler_ficheiro(fxregistar_servicos)    
 
 
 def escrever_ficheiros():
 	# adicionar todos ficheiros a guardar
     util.escrever_ficheiro(fxClientes, clientes.listaClientes)
     util.escrever_ficheiro(fxVeiculos, veiculos.listaVeiculos)
-    util.escrever_ficheiro(fxServicos, servicos.listaServicos)
+    util.escrever_ficheiro(fxgestao_servicos, gestao_servicos.listaServicos)
+    util.escrever_ficheiro(fxregistar_servicos, registar_servicos.listaServicos)
  
 
 # Bloco Principal
@@ -46,7 +48,9 @@ while not terminar:
     elif op == '2':
         veiculos.gerir()
     elif op == '3':
-        servicos.registar_servico()
+        gestao_servicos.gerir()
+    elif op == '4':
+        registar_servicos.gerir()
     elif op == '0':
         terminar = True
 
