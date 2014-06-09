@@ -25,7 +25,7 @@ def encontrar_posicao(codigo):
 
 
 def registar_servico():
-    cod = raw_input("Qual o codigo cliente ? ")
+    cod = raw_input("Qual o codigo serviço ? ")
     
         
     

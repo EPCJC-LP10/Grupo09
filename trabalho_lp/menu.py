@@ -66,6 +66,20 @@ def gestao_servicos():
     op = raw_input("Opção: ")
     return op
     
+def registar_servicos():
+    print
+    print " *** Menu Serviço **** "
+    print
+    print "1. Inserir novo Serviço"
+    print "2. Listar todos Serviços"
+    print "3. Pesquisar Serviço"
+    print "4. Alterar dados de um Serviço"
+    print "5. Eliminar Serviço"
+    print 
+    print "0. Menu Anterior"
+
+    op = raw_input("Opção: ")
+    return op
     
 
 

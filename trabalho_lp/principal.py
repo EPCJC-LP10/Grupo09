@@ -18,6 +18,7 @@ import registar_servicos
 fxClientes = "fxclientes.dat"
 fxVeiculos = "fxveiculos.dat"
 fxgestao_servicos = "fxgestao_servicos.dat"
+fxregistar_servicos="fxregistar_servicos.dat"
 
 def ler_ficheiros():
 	# adicionar todos ficheiros a ler

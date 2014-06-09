@@ -8,8 +8,6 @@ Created on Mon Jun 02 09:49:41 2014
 from collections import namedtuple
 
 import menu
-import clientes
-
 
 servicoReg = namedtuple("servicoReg", "id, servico, preco")
 listaServicos = []

@@ -102,7 +102,7 @@ def gerir():
     terminar = False
 
     while not terminar:
-        op = menu.servicos()
+        op = menu.registar_servicos()
 
         if op == '1':
             registar_servico()
