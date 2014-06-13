@@ -26,21 +26,18 @@ def encontrar_posicao(codigo):
 
 def registar_servico():
     cod = raw_input("Qual o codigo serviço ? ")
-    
-        
-    
-
+            
     pos = encontrar_posicao(cod)
     
 
-    if pos == -1:
-        print "Não existe esse cliente"
+    if pos >= 0:
+        print "Código já existe"
         return
 
     #ler dados
     servico = raw_input("Qual o servico? ")
     preco = raw_input("Qual o preço?")
-    registo = servicoReg(cod, servico, preco)
+    registo = servicoReg(cod, servico, float(preco))
     listaServicos.append(registo)
 
 
@@ -59,10 +56,12 @@ def pesquisar_servico():
 
 
 def listar_servico():
+    print "Código |            Serviço          | Preço"
+    print "="*48
+    
     for i in range (len(listaServicos)):
-        print "Código: ", listaServicos[i].id
-        print "Serviço: ", listaServicos[i].servico
-        print "Preço: ", listaServicos[i].preco
+        registo = listaServicos[i]
+        print "%3s    |   %-20s      |    %.2f" % (registo.id, registo.servico, registo.preco)
   
 
 def eliminar_servico():

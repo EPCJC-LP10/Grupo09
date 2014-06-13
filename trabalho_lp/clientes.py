@@ -31,7 +31,7 @@ def inserir_cliente():
     pos = encontrar_posicao(cod)
 
     if pos >= 0:
-        print "CÃ³digo jÃ¡ existe"
+        print "Código já existe"
         return
 
     #ler dados
@@ -57,7 +57,7 @@ def pesquisar_cliente():
 
 def listar_cliente():
     for i in range (len(listaClientes)):
-        print "CÃ³digo: ", listaClientes[i].id
+        print "Código: ", listaClientes[i].id
         print "Nome: ", listaClientes[i].nome
         
   

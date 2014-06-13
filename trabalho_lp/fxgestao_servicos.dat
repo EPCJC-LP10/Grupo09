@@ -1,2 +1,30 @@
 (lp0
-.
+ccopy_reg
+_reconstructor
+p1
+(cgestao_servicos
+servicoReg
+p2
+c__builtin__
+tuple
+p3
+(S'1'
+p4
+S'Mudan\xe7a de \xd3leo'
+p5
+F20.0
+tp6
+tp7
+Rp8
+ag1
+(g2
+g3
+(S'2'
+p9
+S'Filtro de Ar'
+p10
+F40.0
+tp11
+tp12
+Rp13
+a.
